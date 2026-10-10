@@ -1,0 +1,24 @@
+{
+  "profile_id": "ofs-alm",
+  "display_name": "OFS OFSAA ALM",
+  "description": "Recognition configuration only; it does not define business calculation rules.",
+  "indicator_patterns": [
+    "\\bFE\\d{3,}\\b"
+  ],
+  "topic_terms": {
+    "detail_expansion": ["明细指标", "展开规则", "明细展开"],
+    "aggregation": ["汇总指标", "汇总规则", "合计"],
+    "cashflow_event": ["现金流事件", "事件处理", "现金流"],
+    "repricing": ["重定价", "重新定价", "repricing"],
+    "amortization": ["摊还", "摊销方式", "amortization"],
+    "contract_field": ["合约字段", "合同字段", "字段映射"],
+    "formula": ["计算公式", "公式", "计算逻辑"],
+    "balance": ["余额", "本金余额"]
+  },
+  "acceptance_case": {
+    "indicator": "FE250",
+    "name": "重定价前余额",
+    "business_definition": null,
+    "note": "No calculation definition is supplied by this profile. Evidence is required before proposing business content."
+  }
+}

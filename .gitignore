@@ -1,0 +1,55 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.venv/
+venv/
+ENV/
+build/
+dist/
+
+# Local/editor operating-system state.
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.code-workspace
+
+# Business documents and generated workspaces are local by default. Do not
+# commit real requirement documents, rendered copies, or extracted media.
+*.docx
+*.docm
+*.dotx
+*.dotm
+*.pdf
+work/
+output/
+artifacts/
+media/
+*.audit.json
+*.validation.json
+*.result.json
+
+# Local package/build outputs.
+site/
+
+# Keep deterministic test fixture sources, but not generated binaries.
+tests/fixtures/generated/
+tests/.tmp/
+
+# Local Codex Skill configuration and evaluation assets are intentionally
+# excluded from the public DRM repository.
+.agents/
+skills/
+tests/skill_cases.json
+tests/test_skill_contract.py
+tools/run_skill_evals.py
+docs/skill-evaluation.md

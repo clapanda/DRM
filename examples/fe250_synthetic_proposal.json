@@ -1,0 +1,85 @@
+{
+  "plan_id": "fe250-synthetic-demo",
+  "clarification_questions": [],
+  "changes": [
+    {
+      "change_id": "FE250-DEMO-001",
+      "source_document": "synthetic_master.docx",
+      "source_location": "现金流指标 余额类指标",
+      "target_location": {
+        "block_kind": "paragraph",
+        "heading_path": ["现金流指标", "余额类指标"],
+        "anchor_id": null,
+        "match_text": "FE250 重定价前余额",
+        "occurrence": null
+      },
+      "operation": "replace_paragraph",
+      "proposed_content": "FE250 重定价前余额：经人工批准的合成测试文本，不代表真实业务计算口径。",
+      "rationale": "验证明确段落替换、证据记录和样式继承",
+      "evidence": [
+        {
+          "reference": "synthetic_master.docx#现金流指标/余额类指标",
+          "excerpt": "本句是待完善的合成占位规则",
+          "evidence_type": "synthetic_test_source"
+        }
+      ],
+      "confidence_status": "confirmed_by_source",
+      "approval_status": "pending",
+      "validation_rules": [
+        {
+          "rule": "exact_text_present",
+          "expected": "FE250 重定价前余额：经人工批准的合成测试文本，不代表真实业务计算口径。"
+        }
+      ]
+    },
+    {
+      "change_id": "FE250-DEMO-002",
+      "source_document": "synthetic_master.docx",
+      "source_location": "现金流指标 余额类指标",
+      "target_location": {
+        "block_kind": "paragraph",
+        "heading_path": ["现金流指标", "余额类指标"],
+        "anchor_id": null,
+        "match_text": "相邻规则：",
+        "occurrence": null
+      },
+      "operation": "insert_after",
+      "proposed_content": "补充说明：此段只验证批准后的定点新增能力。",
+      "rationale": "验证章节内相邻位置新增和样式继承",
+      "evidence": [
+        {
+          "reference": "synthetic_master.docx#现金流指标/余额类指标",
+          "excerpt": "相邻规则",
+          "evidence_type": "synthetic_test_source"
+        }
+      ],
+      "confidence_status": "confirmed_by_source",
+      "approval_status": "pending",
+      "validation_rules": [
+        {
+          "rule": "exact_text_present",
+          "expected": "补充说明：此段只验证批准后的定点新增能力。"
+        }
+      ]
+    },
+    {
+      "change_id": "FE250-DEMO-CONFLICT",
+      "source_document": "synthetic_master.docx",
+      "source_location": "合成冲突测试",
+      "target_location": {
+        "block_kind": "paragraph",
+        "heading_path": [],
+        "anchor_id": null,
+        "match_text": "重复规则",
+        "occurrence": null
+      },
+      "operation": "replace_paragraph",
+      "proposed_content": "该项因定位不唯一不得执行。",
+      "rationale": "验证跨章节定位冲突会阻断执行",
+      "evidence": [],
+      "confidence_status": "ambiguous_needs_confirmation",
+      "approval_status": "pending",
+      "validation_rules": []
+    }
+  ]
+}
